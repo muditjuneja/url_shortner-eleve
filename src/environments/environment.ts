@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  base_uri: 'https://url-shortener-eleve.herokuapp.com/',
+  ui_uri: 'https://url-shortener-eleve-ui.herokuapp.com/',
 };
 
 /*

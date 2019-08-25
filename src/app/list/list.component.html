@@ -1,0 +1,49 @@
+<div class="card" *ngIf="logs && logs.length">
+  <div class="card-body">
+    <h5>Selected Url Logs {{url?.url}}</h5>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Browser</th>
+          <th scope="col">Device</th>
+          <th scope="col">OS</th>
+          <th scope="col">Accessed at</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let log of logs;let i=index;">
+          <th scope="row">{{i+1}}</th>
+          <td>{{log.data.client.name}}</td>
+          <td>{{log.data.device.brand}}/{{log.data.device.type}}</td>
+          <td>{{log.data.os.name}}</td>
+          <td>{{log.created_at | date : 'MMM d, y, h:mm:ss a'}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Url</th>
+      <th scope="col">Created on</th>
+      <th scope="col">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let url of urls;let i=index;">
+      <th scope="row">{{i+1}}</th>
+      <td>{{url.url}}</td>
+      <td>{{url.created_at | date : 'MMM d, y, h:mm:ss a'}}</td>
+      <td><button (click)="viewDetails(url);">Details</button></td>
+    </tr>
+
+  </tbody>
+</table>
