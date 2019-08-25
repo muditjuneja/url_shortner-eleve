@@ -1,28 +1,28 @@
-# UrlShortner
+# UrlShortner.UI
+User Interface that helps in getting shortened urls.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Technology Stack : Angular 6, Node REST APIs to send and get data ( Another project built on Node.js)
 
-## Development server
+Base Url : https://url-shortener-eleve-ui.herokuapp.com
+Urls exposed : 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. To get the shortened url
+    Url : 'https://url-shortener-eleve-ui.herokuapp.com/'
+    This is screen that lets you get the short version of your long url
+    
 
-## Code scaffolding
+2. To get the long url based on the code
+    Url : 'https://url-shortener-eleve-ui.herokuapp.com/nf'
+    This is the screen which is shown to users when redirecting them to their original long url.
+    This screen features some advertisement and has a delay of 4 seconds for the visibility of those ads. This is also necessary while we capture the data like browser, device etc.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. To get all the urls that are in db
+    Url : 'https://url-shortener-eleve-ui.herokuapp.com/list'
+    
+    This screen will list all the urls that are in the database and let you see the access logs as well.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Backend Repo with DB models: https://github.com/muditjuneja/url_shortner
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# url_shortner-eleve
